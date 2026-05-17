@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: blue;
+}
+.waraper{
+    width: 450px;
+    background-color: white;
+    padding: 70px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 25px rgba(0, 0,0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.container{
+    width: 45%;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 8px;
+    padding:  0 10x;
+}
+input:focus{
+    border-color: blue;
+}
+@media  (max-width: 660px) and (min-width: 480px)
+ {
+    .waraper{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    input{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    
+}
